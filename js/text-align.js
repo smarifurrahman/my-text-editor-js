@@ -1,15 +1,19 @@
 document.getElementById('align-left').addEventListener('click', function () {
-    setTextareaAlignStyle('left');
+    removePreviousClass('align-left');
+    setTextareaAlignStyle('left', 'align-left');
 });
 
 document.getElementById('align-center').addEventListener('click', function () {
-    setTextareaAlignStyle('center');
+    removePreviousClass('align-center');
+    setTextareaAlignStyle('center', 'align-center');
 });
 
 document.getElementById('align-right').addEventListener('click', function () {
-    setTextareaAlignStyle('right');
+    removePreviousClass('align-right');
+    setTextareaAlignStyle('right', 'align-right');
 });
 
 document.getElementById('align-justify').addEventListener('click', function () {
-    setTextareaAlignStyle('justify');
+    removePreviousClass('align-justify');
+    setTextareaAlignStyle('justify', 'align-justify');
 });
