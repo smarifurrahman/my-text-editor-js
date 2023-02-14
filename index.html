@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/aae5e146e7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="bg-[#94C4FE] w-3/4 mx-auto mt-10 py-7 rounded-md font-mono">
+        <h1 class="text-center text-3xl mb-6 font-semibold">My Text Editor</h1>
+        <section class="bg-[#BED9FD] w-3/4 mx-auto border-2 border-gray-600 p-5">
+            <div class="border-b-2 border-gray-600 flex justify-between items-center px-2 pb-5">
+                <div class="flex gap-4 items-center">
+                    <div id="text-bold">
+                        <i class="fa-solid fa-bold"></i>
+                    </div>
+                    <div id="text-italic">
+                        <i class="fa-solid fa-italic"></i>
+                    </div>
+                    <div id="text-underline">
+                        <i class="fa-solid fa-underline"></i>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <div id="align-left">
+                        <i class="fa-solid fa-align-left"></i>
+                    </div>
+                    <div id="align-center">
+                        <i class="fa-solid fa-align-center"></i>
+                    </div>
+                    <div id="align-right">
+                        <i class="fa-solid fa-align-right"></i>
+                    </div>
+                    <div id="align-justify">
+                        <i class="fa-solid fa-align-justify"></i>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <input id="font-size" class="w-11 bg-[#BED9FD] font-semibold rounded-md" type="number" name="" value="16">
+                    <div id="font-case" class="font-semibold">
+                        <h4>aA</h4>
+                    </div>
+                    <input id="text-color" class="rounded-md" type="color" name="">
+                </div>
+            </div>
+            <div class="pt-5">
+                <textarea id="input-textarea" class="w-full h-64 p-2" name=""></textarea>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/font-style.js"></script>
+    <script src="./js/text-align.js"></script>
+    <script src="./js/other-style.js"></script>
+</body>
+
+</html>
