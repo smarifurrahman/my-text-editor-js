@@ -3,9 +3,9 @@ document.getElementById('text-bold').addEventListener('click', function () {
 });
 
 document.getElementById('text-italic').addEventListener('click', function () {
-    setNewClassInTextarea('italic');
+    setNewClassInTextarea('italic', 'text-italic');
 });
 
 document.getElementById('text-underline').addEventListener('click', function () {
-    setNewClassInTextarea('underline');
+    setNewClassInTextarea('underline', 'text-underline');
 });
